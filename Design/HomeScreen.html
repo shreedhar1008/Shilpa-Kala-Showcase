@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-container": "#6f5100",
+                    "primary-container": "#8b4513",
+                    "tertiary-container": "#00672c",
+                    "on-surface-variant": "#54433a",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-container": "#49ec7b",
+                    "outline-variant": "#dac2b6",
+                    "secondary": "#795900",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "surface-container": "#fbebe3",
+                    "outline": "#877369",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#321200",
+                    "background": "#fff8f5",
+                    "inverse-surface": "#372f2a",
+                    "surface-dim": "#e6d7d0",
+                    "primary-fixed": "#ffdbc9",
+                    "on-primary-container": "#ffc29f",
+                    "secondary-fixed-dim": "#f6be3b",
+                    "on-primary-fixed-variant": "#753401",
+                    "surface-container-low": "#fff1eb",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#004c1f",
+                    "on-tertiary-fixed": "#002109",
+                    "surface-variant": "#efdfd8",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#ffb68c",
+                    "surface-container-high": "#f5e5de",
+                    "on-background": "#221a16",
+                    "surface": "#fff8f5",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb68c",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#66ff8e",
+                    "inverse-on-surface": "#feeee6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#3de273",
+                    "on-tertiary-fixed-variant": "#005322",
+                    "secondary-container": "#fcc340",
+                    "primary": "#6c2f00",
+                    "surface-tint": "#934b19",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdea0",
+                    "surface-container-highest": "#efdfd8",
+                    "on-surface": "#221a16"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar Section -->
+<header class="fixed top-0 z-50 bg-primary-container text-on-primary-container flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-16 shadow-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">castle</span>
+<h1 class="font-display-lg text-display-lg text-on-primary-container">Shilpa-Kala</h1>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-primary-container hover:opacity-80 transition-opacity">search</button>
+<button class="material-symbols-outlined text-on-primary-container hover:opacity-80 transition-opacity">notifications</button>
+</div>
+</header>
+<main class="pt-16 max-w-container-max mx-auto">
+<!-- Hero Banner Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-8">
+<div class="relative w-full h-[180px] rounded-xl overflow-hidden shadow-lg shadow-primary/10">
+<img alt="Karnataka Woodworking Workshop" class="absolute inset-0 w-full h-full object-cover" data-alt="A warm, atmospheric shot of a traditional Karnataka woodworking workshop filled with aromatic cedar shavings and sunlight streaming through high windows. An elderly master artisan in traditional attire is focused on carving intricate patterns into a large teak door. The image captures the fine textures of the wood and the dusty, golden-hour lighting of a heritage studio. The overall mood is respectful, archival, and deeply grounded in artisanal history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMIaCNzmD7v63G5X3mhLQx_1wBL0YmXEdcRvd5Nf4eGysvE0n2dRQq6_P6O7HtN9qoMKUkX9I-sZO9DzMRMNonqO9AaPjK5s9TvPEW3bk18X5ot6iuoyeMwxbEDcJgJxOeYPG_f0AHFjqSKKx3M6cSzH8-1ikgkB6RpWGK2PZ2DOv2vjIi0QpG61JZWiqqRMLLLQnKQ8UGBfsLUuGKpUMSNWP9-nipWrBxXJLI5ijBTQCvb3_zrZeAMGf_3oMT4QVXw8utuh5ro6fz"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex flex-col justify-center px-8">
+<h2 class="text-white font-headline-md text-headline-md max-w-[200px] mb-4">Master Craftsmen of Karnataka</h2>
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-6 py-2 rounded-full w-fit hover:opacity-90 transition-all">Explore</button>
+</div>
+</div>
+</section>
+<!-- Featured Works Section -->
+<section class="py-8">
+<div class="px-margin-mobile md:px-margin-desktop mb-6 flex justify-between items-end">
+<h3 class="font-headline-md text-headline-md text-primary">Featured Works</h3>
+<button class="font-label-md text-label-md text-secondary border-b-2 border-secondary/20 pb-0.5">View Gallery</button>
+</div>
+<div class="flex gap-gutter overflow-x-auto hide-scrollbar px-margin-mobile md:px-margin-desktop snap-x">
+<!-- Card 1 -->
+<div class="flex-shrink-0 w-[170px] snap-start">
+<div class="h-[230px] rounded-xl overflow-hidden mb-3 relative group shadow-lg shadow-primary/10">
+<img alt="Hoysala Sculpture" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up photograph of a detailed Hoysala-style stone sculpture showing a celestial dancer in Chloritic Schist stone. The lighting is soft and directional, emphasizing the deep chisel marks and intricate jewelry patterns characteristic of 12th-century Indian art. The background is a minimalist sandy beige, keeping the focus entirely on the dark grey stone texture. The aesthetic is clean, museum-quality, and high-contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKUfbl9awap3wjuEqDn3hT6WykV_A-yeZoj2hTTj1_9jRS8v0EHtdo9jQDRCppjeMwHfrtUXwYdEuhjriJ8-YeoXRVqPtrJImRbspEmFii51TXAgfE8i4X0QeKyOr89IIJfsaxqS-ewimmgnj2VJ7pImO-4fyyfXoY8WzA8Qw1nLkRiMEuqS5DtFjb0ZTi41vW7-KlR8NRiTx3HPIqgqz2EDDQ8igcnVM9dEUFeNFPle671ckMVk6idh0L-zAcV1F3fPO_n-Exaf8g"/>
+<div class="absolute top-2 left-2 bg-secondary/90 text-white font-label-md text-[10px] px-2 py-0.5 rounded-sm tracking-widest">HOYSALA</div>
+</div>
+<p class="font-display-lg text-[16px] text-on-surface line-clamp-1">Nartaki Shila</p>
+<p class="font-label-md text-[12px] text-on-surface-variant mb-1">By Ramesh Acharya</p>
+<p class="font-label-md text-label-md text-primary font-bold">₹42,500</p>
+</div>
+<!-- Card 2 -->
+<div class="flex-shrink-0 w-[170px] snap-start">
+<div class="h-[230px] rounded-xl overflow-hidden mb-3 relative group shadow-lg shadow-primary/10">
+<img alt="Teak Wood Carving" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A macro photograph of a carved teak wood panel depicting a traditional Gaja-Lakshmi motif. The rich, warm grain of the wood is illuminated by soft light, highlighting the high-relief carving and artisanal details. The style is traditional yet presented with modern clarity against a warm parchment background. The overall color palette is earthy browns and golden ambers, reflecting a premium heritage aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByxHKEmG_NROqyNtAo8NJ0iey8w46qZTpvH1r2YLI8EvJnYbvg4Ru8Fwa-9Tvsvlh4hmZTl-0FZuxkCCbqiQpxOKNHB2T2XgVfzpCP4HxgFIuvTBUuI-URiLoxNKbLl7_BTlyb1FAVDRJuAiJWErc3osbaAdE1qBF4yyJFrt2aBdJ-8dQFJgwXXSJmwjyObHZiqvCB9a3H-7qOrIt-u5gCzvI4Ps5ytoa7lqTftwUrXq2SBOIhj-xbDxZCraV2rFnMty8a26y3FIbm"/>
+<div class="absolute top-2 left-2 bg-secondary/90 text-white font-label-md text-[10px] px-2 py-0.5 rounded-sm tracking-widest">TEAK WOOD</div>
+</div>
+<p class="font-display-lg text-[16px] text-on-surface line-clamp-1">Vana Lakshmi</p>
+<p class="font-label-md text-[12px] text-on-surface-variant mb-1">By Lokesh S.</p>
+<p class="font-label-md text-label-md text-primary font-bold">₹18,200</p>
+</div>
+<!-- Card 3 -->
+<div class="flex-shrink-0 w-[170px] snap-start">
+<div class="h-[230px] rounded-xl overflow-hidden mb-3 relative group shadow-lg shadow-primary/10">
+<img alt="Granite Statue" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A photograph of a monolithic granite Nandi statue standing against a soft-focus heritage background. The grey stone surface has a subtle sheen from ages of ritual care, showing natural weathering and strong geometric form. The lighting is bright and airy, suggesting an open-air temple courtyard. The composition is minimalist and high-end, focusing on the tactile quality of the ancient stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNGUAPuEmeJHZ_G8V3MB639H-qwuYhikNl1K-INyjc1CFkgK2BLt7oSrQevB4uxLSV6fXU1-cP58vWa6Im1qxYdwIueYi6J5T70H3407Z9YAC34am425NdlCtAmUQ4n-QrDl19ow9sJwP5XjBfnpH6tXysMY4zFWEia-NeGQNWeXnm5f4D_8JeBRfa_wKhNg68P0UKH8R-hRPN17LiyLHIrIZ8L3VAEO3iOMkfRkEM_nyxoe_t-AjnIAm7TAQMoAjHCIQ4nVeHYUNb"/>
+<div class="absolute top-2 left-2 bg-secondary/90 text-white font-label-md text-[10px] px-2 py-0.5 rounded-sm tracking-widest">GRANITE</div>
+</div>
+<p class="font-display-lg text-[16px] text-on-surface line-clamp-1">Monolith Nandi</p>
+<p class="font-label-md text-[12px] text-on-surface-variant mb-1">By Shivamogga Arts</p>
+<p class="font-label-md text-label-md text-primary font-bold">₹75,000</p>
+</div>
+</div>
+</section>
+<!-- Master Craftsmen Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-8">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Master Craftsmen</h3>
+<div class="space-y-4">
+<!-- Artist Card 1 -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img alt="Artist Profile" class="w-16 h-16 rounded-full object-cover border-2 border-secondary-fixed" data-alt="A dignified portrait of an elderly Indian master artisan in a bright, sunlit workshop. He wears a simple white dhoti and has silver hair, with a focused yet peaceful expression. In the blurred background, several intricate wood carvings are visible. The lighting is warm and natural, creating an archival and respectful atmosphere that honors his lifelong dedication to craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD50dsNO7ZZIJrAowhMvEc_TJZCW4TG6ys7QZ_AaUwgMj5x5e7QLAlJ_WxRFZajfA2PlgkvkSNtCzq-FEu5PQkQj7LksKcmtvoJ4Lk9l_SQHTjypbmO7_id0n4n13tCsScUo_7BuiV5M7ktdY36_KOvFwtN63dIIWAH1iBF7JWlB7zaqNstfC5FjJTDp9SVkOIEL9WmikBvLnUzpePf4tDZUTB4tQuXYEzi-5cWUjdt0fXRTqmPaTsiKhTQOiz8zenG4SzU2iPkTyA"/>
+<div class="absolute -bottom-1 -right-1 bg-tertiary text-white rounded-full p-0.5 flex">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Shivaappa Hegde</h4>
+<p class="text-[12px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Sagar, Karnataka
+                                </p>
+</div>
+<div class="flex items-center bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded text-[12px] font-bold">
+<span class="material-symbols-outlined text-[14px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+                            </div>
+</div>
+<div class="flex gap-2 mt-2">
+<span class="bg-surface-variant text-on-surface-variant text-[10px] px-2 py-0.5 rounded-full uppercase tracking-tighter">Sandalwood Carving</span>
+<span class="bg-surface-variant text-on-surface-variant text-[10px] px-2 py-0.5 rounded-full uppercase tracking-tighter">45 yrs Exp</span>
+</div>
+</div>
+</div>
+<!-- Artist Card 2 -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img alt="Artist Profile" class="w-16 h-16 rounded-full object-cover border-2 border-secondary-fixed" data-alt="A portrait of a middle-aged sculptor with dust-covered hands, leaning against a large block of soapstone. He has a warm smile and is wearing a traditional saffron-colored cotton shirt. The background shows the courtyard of a heritage sculpture school with several half-finished stone deities. The visual style is premium and tactile, emphasizing the connection between the artisan and his material." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnTpzjQfCLChYe-DloyoRCzopet_20AJpWOkAkyMpjHSU6oJOFN406kjkUZZ-e993xoifYleEpabd6rPwagHPUvztWlVmRbfrQSyTtaHsoJnlpQYlGTwN_XGBcDmUx8Ek88NkQQ-aqJLK5o3oYmCPstTxlhnKQfwsnIB16YWfi_fgPTuLiESeJwfkpWDAODQQxAxZQE9wQAeWOCZihDE_Ih8MU_8Xw9Q-bWCIAMAHvcrwwiWd7NM0jJ4kXpnnqspGouKBnVsQ-PpM3"/>
+<div class="absolute -bottom-1 -right-1 bg-tertiary text-white rounded-full p-0.5 flex">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-md text-[18px] text-on-surface">Manjunath K.</h4>
+<p class="text-[12px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Shivarapatna
+                                </p>
+</div>
+<div class="flex items-center bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded text-[12px] font-bold">
+<span class="material-symbols-outlined text-[14px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+                            </div>
+</div>
+<div class="flex gap-2 mt-2">
+<span class="bg-surface-variant text-on-surface-variant text-[10px] px-2 py-0.5 rounded-full uppercase tracking-tighter">Stone Sculpture</span>
+<span class="bg-surface-variant text-on-surface-variant text-[10px] px-2 py-0.5 rounded-full uppercase tracking-tighter">Award Winner</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage Teaser Banner -->
+<section class="px-margin-mobile md:px-margin-desktop py-12">
+<div class="h-[100px] w-full rounded-xl bg-gradient-to-r from-primary to-primary-container flex items-center justify-between px-8 shadow-xl shadow-primary/20">
+<div>
+<h3 class="text-on-primary-container font-serif text-[20px]">Tracing Hoysala Roots</h3>
+<p class="text-on-primary-container/80 text-[12px]">The geometry of 12th century stone</p>
+</div>
+<button class="bg-white text-primary font-label-md text-label-md px-5 py-2 rounded-lg hover:bg-surface-bright transition-colors">Discover</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Section -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-4 pb-safe bg-surface dark:bg-surface-container shadow-[0_-4px_12px_rgba(139,69,19,0.12)]">
+<!-- Home Active -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<!-- Heritage Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">museum</span>
+<span class="font-label-md text-label-md">Heritage</span>
+</a>
+<!-- About Inactive -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-label-md text-label-md">About</span>
+</a>
+</nav>
+<!-- WhatsApp CTA Button -->
+<button class="fixed right-6 bottom-24 bg-[#25D366] text-white p-4 rounded-full shadow-lg z-40 flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.516.893 3.004 1.343 4.676 1.343 5.403 0 9.8-4.397 9.802-9.802.001-2.618-1.02-5.08-2.876-6.937-1.856-1.857-4.319-2.877-6.94-2.877-5.405 0-9.801 4.397-9.802 9.802 0 1.777.49 3.195 1.41 4.734l-.946 3.455 3.536-.918z"></path>
+</svg>
+<span class="font-label-md text-label-md hidden md:inline">Message Artisan</span>
+</button>
+</body></html>

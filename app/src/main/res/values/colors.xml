@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="saddle_brown">#FF8B4513</color>
+    <color name="golden_rod">#FFDAA520</color>
+    <color name="old_lace">#FFFDF5E6</color>
+</resources>

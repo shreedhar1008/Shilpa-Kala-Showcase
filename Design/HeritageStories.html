@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fff8f5",
+                    "on-secondary-container": "#6f5100",
+                    "primary-container": "#8b4513",
+                    "tertiary-container": "#00672c",
+                    "on-surface-variant": "#54433a",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-container": "#49ec7b",
+                    "outline-variant": "#dac2b6",
+                    "secondary": "#795900",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "surface-container": "#fbebe3",
+                    "outline": "#877369",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#321200",
+                    "background": "#fff8f5",
+                    "inverse-surface": "#372f2a",
+                    "surface-dim": "#e6d7d0",
+                    "primary-fixed": "#ffdbc9",
+                    "on-primary-container": "#ffc29f",
+                    "secondary-fixed-dim": "#f6be3b",
+                    "on-primary-fixed-variant": "#753401",
+                    "surface-container-low": "#fff1eb",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#004c1f",
+                    "on-tertiary-fixed": "#002109",
+                    "surface-variant": "#efdfd8",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#ffb68c",
+                    "surface-container-high": "#f5e5de",
+                    "on-background": "#221a16",
+                    "surface": "#fff8f5",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb68c",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#66ff8e",
+                    "inverse-on-surface": "#feeee6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#3de273",
+                    "on-tertiary-fixed-variant": "#005322",
+                    "secondary-container": "#fcc340",
+                    "primary": "#6c2f00",
+                    "surface-tint": "#934b19",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#ffdea0",
+                    "surface-container-highest": "#efdfd8",
+                    "on-surface": "#221a16"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "body-lg": ["Manrope"],
+                    "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                    "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-primary-container dark:bg-primary-container docked full-width top-0 sticky z-50 transition-opacity duration-200">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-primary text-2xl" data-icon="castle">castle</span>
+<h1 class="font-display-lg text-display-lg text-on-primary dark:text-on-primary-container">Shilpa-Kala</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="text-on-primary/70 hover:opacity-80 transition-opacity font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-primary hover:opacity-80 transition-opacity font-label-md text-label-md" href="#">Heritage</a>
+<a class="text-on-primary/70 hover:opacity-80 transition-opacity font-label-md text-label-md" href="#">About</a>
+</nav>
+<span class="material-symbols-outlined text-on-primary text-2xl cursor-pointer hover:opacity-80" data-icon="search">search</span>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Heritage Stats Banner -->
+<section class="relative overflow-hidden rounded-[20px] bg-surface-container mb-16 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border border-outline-variant/30">
+<div class="relative z-10 space-y-4 max-w-xl">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Chronicles of Stone</span>
+<h2 class="font-display-lg text-4xl md:text-5xl text-on-surface">Preserving Ancient Legacies</h2>
+<p class="text-on-surface-variant font-body-lg opacity-80">Our archive documents the intricate evolution of Indian sculpture, mapping centuries of artistic mastery through digital preservation and artisan collaboration.</p>
+</div>
+<div class="relative z-10 flex gap-8 md:gap-12">
+<div class="text-center">
+<p class="font-display-lg text-4xl text-primary">12</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Heritage Styles</p>
+</div>
+<div class="w-px h-16 bg-outline-variant"></div>
+<div class="text-center">
+<p class="font-display-lg text-4xl text-primary">500+</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Master Craftsmen</p>
+</div>
+</div>
+<!-- Subtle Decorative Element -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/5 blur-3xl"></div>
+</section>
+<!-- Style Cards Grid -->
+<div class="grid grid-cols-1 gap-16">
+<!-- Hoysala Style Card -->
+<article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-7 relative overflow-hidden rounded-[12px] shadow-[0_8px_24px_rgba(139,69,19,0.12)]">
+<img alt="Detailed Hoysala temple stone carving" class="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking close-up of intricate Hoysala stone carvings on an ancient temple wall in Belur. The sculpture depicts multiple deities and floral motifs with microscopic detail in soft, golden hour sunlight. The sandstone texture is palpable, with deep shadows emphasizing the depth of the chisel marks. The aesthetic is archival and museum-quality, reflecting a rich historical heritage in a warm, light-toned palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAio-wZUPwpjyDqG_EzJi-pltxyug57MAs6LMLObZHiBUxVxtyGvvRwiugOOmhLfz-qLbZMBmhHkBFR_oKApit-DLiVdWmUc1MfL2tIWWotSHSP2E0UJeMK3RykXvhhPWcKMXzdIAiar4Ph5YLNyRjhCps_To9NNf3_VU-5Jsmd9MfETQY_ZUwPIEgqBtlNss13gxrZroEt-h5_kn4GzgKXb_5iw6rPThb-xDzb5h9GMd-lOG0Sa3E3TbqHRoGJ_-8n59iPI_eZkmgP"/>
+<div class="absolute top-6 left-6 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-md text-label-md shadow-sm">
+                        11th – 14th Century
+                    </div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center h-full pt-4">
+<h3 class="font-display-lg text-4xl text-on-surface mb-4">Hoysala Sculpture</h3>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Karnataka, Deccan Plateau</span>
+</div>
+<p class="text-on-surface-variant font-body-lg leading-relaxed mb-8">
+                        The Hoysala style is renowned for its hyper-detailed ornamentation, possible through the use of soft soapstone (Chloritic Schist) which hardens over time. Originating in the heart of Karnataka, these sculptures often depict celestial beings with jewelry so fine it appears wearable.
+                    </p>
+<div class="space-y-4 mb-10">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Key Characteristics</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Star-shaped (Stellate) platform foundations</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Elaborate Madanikas or Bracket figures</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Miniature detail on soapstone surfaces</span>
+</li>
+</ul>
+</div>
+<button class="w-fit bg-primary-container text-on-primary-container hover:opacity-90 px-8 py-3 rounded-[10px] font-label-md text-label-md transition-all flex items-center gap-2 shadow-lg shadow-primary/10">
+                        Explore Collection
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<div class="h-px bg-outline-variant/30 w-full"></div>
+<!-- Chola Style Card -->
+<article class="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-start flex-row-reverse">
+<div class="lg:col-span-5 lg:order-1 flex flex-col justify-center h-full pt-4">
+<h3 class="font-display-lg text-4xl text-on-surface mb-4">Imperial Chola Bronzes</h3>
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Tamil Nadu, Kaveri Delta</span>
+</div>
+<p class="text-on-surface-variant font-body-lg leading-relaxed mb-8">
+                        Chola art is the pinnacle of bronze casting. Utilizing the 'lost wax' (Cire Perdue) method, Chola artisans created fluid, rhythmic figures that epitomize the divine grace of South Indian spiritual traditions, most notably the Nataraja.
+                    </p>
+<div class="space-y-4 mb-10">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Key Characteristics</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Perfect anatomical proportions and symmetry</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Sensuous curves and dynamic movement</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Iconic Nataraja (Cosmic Dancer) posture</span>
+</li>
+</ul>
+</div>
+<button class="w-fit bg-primary-container text-on-primary-container hover:opacity-90 px-8 py-3 rounded-[10px] font-label-md text-label-md transition-all flex items-center gap-2 shadow-lg shadow-primary/10">
+                        Explore Collection
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="lg:col-span-7 lg:order-2 relative overflow-hidden rounded-[12px] shadow-[0_8px_24px_rgba(139,69,19,0.12)]">
+<img alt="Elegant Chola bronze sculpture" class="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An exquisite bronze sculpture of a deity from the Chola dynasty, displayed in a minimalist museum setting with dramatic spotlighting. The metal has a rich, aged patina with highlights catching the smooth, sensuous curves of the form. The background is a soft, warm cream, emphasizing the figure's silhouette. The atmosphere is serene and respectful, capturing the high-end digital preservation of ancient Indian artistry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdD1IKiM743cndcbSQqiuMJoHdIqYQw83ohazWeDtNkn8lsgWdLXWawyErFisAlaiDrCpDW_YHyQ9yJnMHqpWfgpAtObnopRUYOwuVXV5HJmfwF79DVyw6OV0TcSwnQNrf4kPop8pAGd-gDe-LhYiQ0V7oJAqXXwnAyKlSX70sU96pRYNwO6lAOIyu5ov-DPm85NXXkILnROVPOdfab06SBu2YrxPeA4mCF9QLvLJWELdmFnyzdmS80uKFkdYT3BI0ST5lHVc1QiYo"/>
+<div class="absolute top-6 left-6 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-label-md text-label-md shadow-sm">
+                        9th – 13th Century
+                    </div>
+</div>
+</article>
+<!-- WhatsApp Artisan CTA -->
+<section class="mt-8 bg-surface-container-high rounded-[20px] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 border border-[#25D366]/20">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-[#25D366]/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#25D366] text-4xl" data-icon="chat">chat</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Connect with a Master Artisan</h4>
+<p class="text-on-surface-variant font-body-lg">Commission a custom heritage piece directly from the weavers and carvers.</p>
+</div>
+</div>
+<a class="flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-[10px] font-label-md text-label-md hover:brightness-105 transition-all shadow-lg shadow-[#25D366]/20" href="https://wa.me/1234567890">
+<span class="material-symbols-outlined" data-icon="message" style="font-variation-settings: 'FILL' 1;">message</span>
+                    Message Artisan
+                </a>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-4 pb-safe bg-surface dark:bg-surface-container shadow-[0_-4px_12px_rgba(139,69,19,0.12)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="museum">museum</span>
+<span class="font-label-md text-label-md">Heritage</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-md text-label-md">About</span>
+</div>
+</nav>
+<!-- Footer for Desktop -->
+<footer class="hidden md:block py-16 bg-surface-container-low border-t border-outline-variant/30 mt-16">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-4 gap-12">
+<div class="col-span-2">
+<h2 class="font-display-lg text-display-lg text-primary mb-6">Shilpa-Kala</h2>
+<p class="text-on-surface-variant max-w-sm">A digital sanctuary for the timeless artistry of Indian stone and wood carving. Honoring the past, sculpting the future.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-6 uppercase tracking-wider">Resources</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Style Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Period Timeline</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Artisan Network</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Preservation Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Craft</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-outline-variant/20 text-center text-on-surface-variant/60 text-sm">
+            © 2024 Shilpa-Kala. All carvings digitally archived for preservation.
+        </div>
+</footer>
+</body></html>

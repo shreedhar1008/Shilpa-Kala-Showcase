@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Manrope:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-container": "#6f5100",
+                        "primary-container": "#8b4513",
+                        "tertiary-container": "#00672c",
+                        "on-surface-variant": "#54433a",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-container": "#49ec7b",
+                        "outline-variant": "#dac2b6",
+                        "secondary": "#795900",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-container": "#fbebe3",
+                        "outline": "#877369",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#321200",
+                        "background": "#fff8f5",
+                        "inverse-surface": "#372f2a",
+                        "surface-dim": "#e6d7d0",
+                        "primary-fixed": "#ffdbc9",
+                        "on-primary-container": "#ffc29f",
+                        "secondary-fixed-dim": "#f6be3b",
+                        "on-primary-fixed-variant": "#753401",
+                        "surface-container-low": "#fff1eb",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#004c1f",
+                        "on-tertiary-fixed": "#002109",
+                        "surface-variant": "#efdfd8",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#ffb68c",
+                        "surface-container-high": "#f5e5de",
+                        "on-background": "#221a16",
+                        "surface": "#fff8f5",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb68c",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#66ff8e",
+                        "inverse-on-surface": "#feeee6",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#3de273",
+                        "on-tertiary-fixed-variant": "#005322",
+                        "secondary-container": "#fcc340",
+                        "primary": "#6c2f00",
+                        "surface-tint": "#934b19",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdea0",
+                        "surface-container-highest": "#efdfd8",
+                        "on-surface": "#221a16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Manrope"],
+                        "label-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #fcc340 0%, #fcc340 100%);
+            width: 2px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-lg antialiased">
+<!-- TopAppBar -->
+<header class="bg-primary-container dark:bg-primary-container docked full-width top-0 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 fixed">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-primary" data-icon="castle">castle</span>
+<h1 class="font-display-lg text-display-lg text-on-primary">Shilpa-Kala</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md text-on-primary hover:opacity-80 transition-opacity duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-primary hover:opacity-80 transition-opacity duration-200" href="#">Heritage</a>
+<a class="font-label-md text-label-md text-on-primary hover:opacity-80 transition-opacity duration-200" href="#">About</a>
+</nav>
+<span class="material-symbols-outlined text-on-primary hover:opacity-80 transition-opacity duration-200 cursor-pointer" data-icon="search">search</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Header Card -->
+<section class="mb-16">
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-xl shadow-primary/10">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-resolution close-up of a master artisan's weathered hands using a traditional chisel on a large block of raw sandstone. The setting is a sun-drenched outdoor workshop in rural India, with soft morning light casting long, dramatic shadows. The color palette is dominated by warm earth tones, sandy beiges, and deep saddle browns. The mood is reverent and focused, capturing the very beginning of a sacred artistic journey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsrggFjz8SV40JM152Vy-TZ_PzAGu2R1DdD-A3edf4x2W7bDLlNa2yGAKhERcq_nPriAmCikpbstaSjZipJ5ebhmew54mYKQ60q9EVuiLhpid_kEgpsrO-ge-WLHxmxNpAjXT97x9ZPWli5jkMPjZJOR7dpHs-I0Na33YVMwlaBPTS8jgLxeHRhrgv4fjP1JVQav6aMvdLcZZioOS60UeATctmt8tXwJxyPELwuvjh3zvu1NvcGW7HiqE3_zA0gRpFcAgcfesUV3KZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-12">
+<span class="text-secondary-container font-label-md text-label-md mb-2">CHRONICLES OF CREATION</span>
+<h2 class="font-display-lg text-display-lg text-white mb-4">From Rock to Masterpiece</h2>
+<p class="text-white/80 max-w-2xl font-body-lg text-body-lg">Witness the metamorphosis of ancient stone into divine form. Each stroke of the hammer is a conversation between the artisan and the eternal soul of the earth.</p>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="relative">
+<div class="absolute left-4 md:left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2 opacity-30"></div>
+<div class="space-y-16">
+<!-- Step 1: Selection -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between group">
+<div class="hidden md:block w-[45%]"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container z-10 shadow-lg border-4 border-background">
+<span class="font-bold">1</span>
+</div>
+<div class="ml-12 md:ml-0 md:w-[45%] bg-white p-6 rounded-[12px] shadow-[0_4px_12px_rgba(139,69,19,0.12)] border border-surface-variant">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform transition-transform group-hover:scale-105 duration-500" data-alt="A high-contrast photo of raw, unworked granite boulders scattered across a dry, rocky terrain in Southern India. The lighting is harsh midday sun, emphasizing the rugged textures and natural crystalline structure of the stone. The color palette includes dusty ochres, slate greys, and parched earth tones. The atmosphere is quiet and monumental, suggesting the latent potential within the raw material." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWSGM8Q5KR1n85VJvHlh-5xddC3DVuOvONCrCG8pGVH5OSP0iJCp_LZrumiwdQhbJrtwO2b2E00p4zMN1YMei_fei_is91K5H6GG8HTeBj4X2_rHubWg8lX_LDnAZoIEXKTzW_fdyJXyhKB6lMYDV_N_davEXX5KDQVQI1U_Efzm1bmelvV-qqLJ3nG38IcXHjRxtcLKR7VIbkVz8vhkOL9eFsw97PJNR3Ihg-1Me25D6Bi1mBwC1mfSlIe_Rxb06w3J-0LdSUEBO8"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Selection</h3>
+<span class="bg-tertiary-container/10 text-tertiary px-3 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider">Completed</span>
+</div>
+<p class="text-on-surface-variant font-body-lg text-body-lg">The journey begins by identifying a stone with the right grain, density, and spiritual resonance for the intended deity or pattern.</p>
+</div>
+</div>
+<!-- Step 2: Rough Shaping -->
+<div class="relative flex flex-col md:flex-row-reverse items-center md:justify-between group">
+<div class="hidden md:block w-[45%]"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container z-10 shadow-lg border-4 border-background">
+<span class="font-bold">2</span>
+</div>
+<div class="ml-12 md:ml-0 md:w-[45%] bg-white p-6 rounded-[12px] shadow-[0_4px_12px_rgba(139,69,19,0.12)] border border-surface-variant">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform transition-transform group-hover:scale-105 duration-500" data-alt="An atmospheric photograph showing a block of stone with chalk outlines and the first heavy chisel marks defining a basic human silhouette. Dust motes dance in shafts of warm workshop light, highlighting the emerging form. The color palette is a mix of pale stone dust, deep shadows, and warm wood tones. The aesthetic is tactile and archival, documenting the labor-intensive first stage of carving." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWq0Kb7n--Hg-m1ZPKLx_JBpGVPrl85AVcVO1YOKz7OtsqeFDcrOPo11kXo5gAlegIl6l_jv3hnY32Uc_EmGJqLj_zrmq-djRsN_C1_kOIvTvq0khOIrlpSaYFcTrNdrXN85r6iOjJBDdDPwiZzCHk-rcDXGxv0jV6Pv4qi_T-0sYxQxH0ukq1NXmsC5xkU6K5milrcvtjSoGcSeVk08tCzbu1a9mFRiG1cOU1QOVZnqgRcUggODKt2xXX7bV8_ic9j-h-yl4CJEJR"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Rough Shaping</h3>
+<span class="bg-tertiary-container/10 text-tertiary px-3 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider">Completed</span>
+</div>
+<p class="text-on-surface-variant font-body-lg text-body-lg">Large chunks are removed to reveal the basic silhouette. This stage requires immense physical strength and a clear vision of the final proportions.</p>
+</div>
+</div>
+<!-- Step 3: Detailed Carving -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between group">
+<div class="hidden md:block w-[45%]"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container z-10 shadow-lg border-4 border-background">
+<span class="font-bold">3</span>
+</div>
+<div class="ml-12 md:ml-0 md:w-[45%] bg-white p-6 rounded-[12px] shadow-[0_8px_24px_rgba(139,69,19,0.15)] border-2 border-secondary">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transform transition-transform group-hover:scale-105 duration-500" data-alt="A detailed macro shot of a stone carving showing intricate floral patterns and jewelry details being refined with a fine-point tool. The lighting is soft and directional, revealing the delicate textures of the stone surface and the precision of the craftsman. The palette is dominated by warm beige and subtle golden highlights. The mood is one of intense craftsmanship and artistic perfection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCecGlvVqpUBAROKXYpWOEBQbrAmNbDRxzBOnQMG5u5ItDy1PpLcKWkx7OxW1tMILl6wh9cRXpivqn8kSsLft8EJnsd_0330SUaOIIirMuNPKFzsdQl-hRxUDrKSUX88LsLXBi7dBnLHOwwoRNWwuXfWHjRhHjM_GsHPCfMufjuTMLH_fl3vIbHFOl56Uw8EV4NijqYDLM9hilYqVUE1ssSZtz50NWr-WbPgUSdmEv4pAwiPYTNcTiLtoVS2pkdpWeFqoYGFWKyCUwP"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">Detailed Carving</h3>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider animate-pulse">In Progress</span>
+</div>
+<p class="text-on-surface-variant font-body-lg text-body-lg">The soul of the piece emerges. Artisans use smaller chisels to define eyes, jewelry, and intricate textures with mathematical precision.</p>
+</div>
+</div>
+<!-- Step 4: Polishing -->
+<div class="relative flex flex-col md:flex-row-reverse items-center md:justify-between group opacity-60">
+<div class="hidden md:block w-[45%]"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-surface-dim text-on-surface-variant z-10 shadow-lg border-4 border-background">
+<span class="font-bold">4</span>
+</div>
+<div class="ml-12 md:ml-0 md:w-[45%] bg-white p-6 rounded-[12px] shadow-[0_4px_12px_rgba(139,69,19,0.05)] border border-surface-variant">
+<div class="h-48 mb-6 overflow-hidden rounded-lg grayscale">
+<img class="w-full h-full object-cover" data-alt="A black and white artistic photo of an artisan rubbing a stone sculpture with a fine abrasive cloth. The surface of the stone is starting to glow with a soft, satin-like sheen. The composition is minimal and elegant, focusing on the tactile relationship between hand and stone. The mood is serene and patient, representing the final refinements of the artistic process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZnf1beLDUvll6b7njANlkWd0JlY3zgmQ5ksW53atcavYUHDk8c3UrEh4l9fY0X2KrTfsNSjjllMXcI_PUqTO-DGKelACvQy0UGvs7UQZxTI1Ls0Q4cUaOtvXNMstZwOs1z1vG5hROTDkczxd7Tw3v4udY1NZACXXAjHo91zWVAyFjNf5V1rWMds0OhJKhaywZyAQ3yEejYB7CdWX03P4tVzeYB84UUINvpv40-hyKSX2qwZ2YZ-5tELfAAiGLZnzJdf4XdEpUkWli"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface-variant">Polishing</h3>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider">Upcoming</span>
+</div>
+<p class="text-on-surface-variant/70 font-body-lg text-body-lg">Using natural abrasives and water, the rough surface is smoothed to a satin finish, highlighting the natural beauty of the stone.</p>
+</div>
+</div>
+<!-- Step 5: Blessing -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between group opacity-60">
+<div class="hidden md:block w-[45%]"></div>
+<div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-10 h-10 rounded-full bg-surface-dim text-on-surface-variant z-10 shadow-lg border-4 border-background">
+<span class="font-bold">5</span>
+</div>
+<div class="ml-12 md:ml-0 md:w-[45%] bg-white p-6 rounded-[12px] shadow-[0_4px_12px_rgba(139,69,19,0.05)] border border-surface-variant">
+<div class="h-48 mb-6 overflow-hidden rounded-lg grayscale">
+<img class="w-full h-full object-cover" data-alt="A sacred and atmospheric image of a finished stone deity decorated with vibrant marigold garlands and vermillion marks. A small flame from an oil lamp flickers in the foreground, casting a warm, spiritual glow on the sculpture. The setting is a traditional sanctum with stone walls. The color palette is rich with deep oranges, reds, and golden candlelight against cool stone greys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ab57WyT0b7STNKVI901YFVFPnT4tZqoM72IPxvKc1tRg01oUvPtrVYtnBhad8AkRxbrPoJX-si4lKjHvO0h_6UB6TVmT_rrCGUZfiDyjiDq9Jd-sOGa7uEKry5ghol3DeQ9tLzKkv8in-uYIiQ12QrmDR8XTRJ_imMuL9faKRw5Cf6fTJhCmdfLRaIZTGe8PMjcUrcf1RczQTvd82EDIuxejRF2CAFoj0LVNQNsCqD71O4im6I23cVghrjGtjfxcVTQRsoB5fqZw"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface-variant">Blessing</h3>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider">Upcoming</span>
+</div>
+<p class="text-on-surface-variant/70 font-body-lg text-body-lg">The final step is the ritualistic awakening of the sculpture, where it is consecrated with offerings and prayers before its final journey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp CTA -->
+<section class="mt-24 flex justify-center">
+<button class="bg-[#25D366] text-white px-8 py-4 rounded-[10dp] flex items-center gap-3 shadow-lg hover:brightness-95 transition-all transform hover:-translate-y-1">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-md text-label-md">Message Artisan for Progress Updates</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-4 pb-safe bg-surface dark:bg-surface-container shadow-[0_-4px_12px_rgba(139,69,19,0.12)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-transform scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 transition-transform scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="museum">museum</span>
+<span class="font-label-md text-label-md">Heritage</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-transform scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-label-md text-label-md">About</span>
+</div>
+</nav>
+</body></html>
