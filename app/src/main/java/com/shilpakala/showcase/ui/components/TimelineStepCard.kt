@@ -18,24 +18,14 @@ import com.shilpakala.showcase.ui.theme.*
 @Composable
 fun TimelineStepCard(
     step: TimelineStep,
-    isCompleted: Boolean,
-    isInProgress: Boolean,
     modifier: Modifier = Modifier
 ) {
-
-
     Card(
         modifier = modifier.fillMaxWidth(),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(containerColor = Color.White),
-        elevation = CardDefaults.cardElevation(
-            defaultElevation = if (isInProgress) 6.dp else 2.dp
-        ),
-        border = if (isInProgress) {
-            androidx.compose.foundation.BorderStroke(2.dp, Secondary)
-        } else {
-            androidx.compose.foundation.BorderStroke(1.dp, SurfaceVariant)
-        }
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        border = androidx.compose.foundation.BorderStroke(1.dp, SurfaceVariant)
     ) {
         Column(
             modifier = Modifier
@@ -50,8 +40,7 @@ fun TimelineStepCard(
                     .fillMaxWidth()
                     .height(180.dp)
                     .clip(RoundedCornerShape(8.dp)),
-                contentScale = ContentScale.Crop,
-                alpha = if (!isCompleted && !isInProgress) 0.4f else 1f
+                contentScale = ContentScale.Crop
             )
 
             Spacer(modifier = Modifier.height(12.dp))
@@ -64,25 +53,20 @@ fun TimelineStepCard(
                 Text(
                     text = step.title,
                     style = MaterialTheme.typography.headlineMedium,
-                    color = if (isCompleted || isInProgress) Primary else OnSurfaceVariant,
+                    color = Primary,
                     modifier = Modifier.weight(1f)
                 )
-                val (badgeText, badgeColor, badgeTextColor) = when {
-                    isInProgress -> Triple("In Progress", SecondaryContainer, OnSecondaryContainer)
-                    isCompleted -> Triple("Completed", TertiaryContainer.copy(alpha = 0.1f), Tertiary)
-                    else -> Triple("Upcoming", SurfaceVariant, OnSurfaceVariant)
-                }
                 Surface(
                     shape = RoundedCornerShape(50),
-                    color = badgeColor
+                    color = TertiaryContainer.copy(alpha = 0.1f)
                 ) {
                     Text(
-                        text = badgeText.uppercase(),
+                        text = "COMPLETED",
                         style = MaterialTheme.typography.labelSmall.copy(
                             fontWeight = FontWeight.Bold,
                             letterSpacing = 0.5.sp
                         ),
-                        color = badgeTextColor,
+                        color = Tertiary,
                         modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
                         fontSize = 10.sp
                     )
@@ -94,7 +78,7 @@ fun TimelineStepCard(
             Text(
                 text = step.description,
                 style = MaterialTheme.typography.bodyMedium,
-                color = if (isCompleted || isInProgress) OnSurfaceVariant else OnSurfaceVariant.copy(alpha = 0.7f)
+                color = OnSurfaceVariant
             )
         }
     }

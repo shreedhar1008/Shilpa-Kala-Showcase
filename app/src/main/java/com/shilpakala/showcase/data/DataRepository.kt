@@ -21,27 +21,6 @@ object DataRepository {
             title = "Rough Shaping",
             description = "Using heavy chisels and hammers, the sculptor removes large chunks of excess stone to reveal the basic form. This stage requires immense strength and vision — the artist must see the finished sculpture within the raw block. Traditional measurement techniques passed down through generations guide the proportions.",
             imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCWSGM8Q5KR1n85VJvHlh-5xddC3DVuOvONCrCG8pGVH5OSP0iJCp_LZrumiwdQhbJrtwO2b2E00p4zMN1YMei_fei_is91K5H6GG8HTeBj4X2_rHubWg8lX_LDnAZoIEXKTzW_fdyJXyhKB6lMYDV_N_davEXX5KDQVQI1U_Efzm1bmelvV-qqLJ3nG38IcXHjRxtcLKR7VIbkVz8vhkOL9eFsw97PJNR3Ihg-1Me25D6Bi1mBwC1mfSlIe_Rxb06w3J-0LdSUEBO8"
-        ),
-        TimelineStep(
-            id = "${artistPrefix}_step_3",
-            stepNumber = 3,
-            title = "Detailed Carving",
-            description = "The most time-intensive phase where intricate details emerge. Fine chisels, rasps, and specialized tools bring out delicate features — ornamental jewelry, flowing garments, facial expressions, and decorative motifs. A single deity sculpture can take 3-6 months at this stage alone.",
-            imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCWq0Kb7n--Hg-m1ZPKLx_JBpGVPrl85AVcVO1YOKz7OtsqeFDcrOPo11kXo5gAlegIl6l_jv3hnY32Uc_EmGJqLj_zrmq-djRsN_C1_kOIvTvq0khOIrlpSaYFcTrNdrXN85r6iOjJBDdDPwiZzCHk-rcDXGxv0jV6Pv4qi_T-0sYxQxH0ukq1NXmsC5xkU6K5milrcvtjSoGcSeVk08tCzbu1a9mFRiG1cOU1QOVZnqgRcUggODKt2xXX7bV8_ic9j-h-yl4CJEJR"
-        ),
-        TimelineStep(
-            id = "${artistPrefix}_step_4",
-            stepNumber = 4,
-            title = "Polishing",
-            description = "Progressive sanding and polishing using increasingly fine abrasives transforms rough stone into a mirror-like finish. Natural stone oils are applied to enhance the grain and color. The sculpture begins to glow with an inner warmth that only master-polished stone can achieve.",
-            imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuCecGlvVqpUBAROKXYpWOEBQbrAmNbDRxzBOnQMG5u5ItDy1PpLcKWkx7OxW1tMILl6wh9cRXpivqn8kSsLft8EJnsd_0330SUaOIIirMuNPKFzsdQl-hRxUDrKSUX88LsLXBi7dBnLHOwwoRNWwuXfWHjRhHjM_GsHPCfMufjuTMLH_fl3vIbHFOl56Uw8EV4NijqYDLM9hilYqVUE1ssSZtz50NWr-WbPgUSdmEv4pAwiPYTNcTiLtoVS2pkdpWeFqoYGFWKyCUwP"
-        ),
-        TimelineStep(
-            id = "${artistPrefix}_step_5",
-            stepNumber = 5,
-            title = "Finishing & Blessing",
-            description = "Final touches are applied — eyes are opened (netra unmīlana), and the sculpture undergoes a traditional blessing ceremony (prāṇa pratiṣṭhā). The Shilpi performs rituals to infuse divine energy, transforming stone into a sacred embodiment. The masterpiece is now ready for its forever home.",
-            imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuB9ab57WyT0b7STNKVI901YFVFPnT4tZqoM72IPxvKc1tRg01oUvPtrVYtnBhad8AkRxbrPoJX-si4lKjHvO0h_6UB6TVmT_rrCGUZfiDyjiDq9Jd-sOGa7uEKry5ghol3DeQ9tLzKkv8in-uYIiQ12QrmDR8XTRJ_imMuL9faKRw5Cf6fTJhCmdfLRaIZTGe8PMjcUrcf1RczQTvd82EDIuxejRF2CAFoj0LVNQNsCqD71O4im6I23cVghrjGtjfxcVTQRsoB5fqZw"
         )
     )
 

@@ -13,8 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
-import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -32,7 +30,10 @@ fun WorkInProgressTimelineScreen(
     artist: Artist,
     onBack: () -> Unit
 ) {
-    val currentStep = 2 // 0-indexed: step 3 is "In Progress"
+    val currentStep = 2 // 0-indexed
+    
+    // Filter to only show steps that are completed (removing "in progress" and "upcoming")
+    val visibleSteps = artist.timelineSteps.filterIndexed { index, _ -> index < currentStep }
 
     Scaffold(
         topBar = {
@@ -112,10 +113,7 @@ fun WorkInProgressTimelineScreen(
             }
 
             // Timeline steps with vertical line
-            itemsIndexed(artist.timelineSteps) { index, step ->
-                val isCompleted = index < currentStep
-                val isInProgress = index == currentStep
-
+            itemsIndexed(visibleSteps) { index, step ->
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -143,21 +141,18 @@ fun WorkInProgressTimelineScreen(
                             modifier = Modifier
                                 .size(40.dp)
                                 .clip(CircleShape)
-                                .background(
-                                    if (isCompleted || isInProgress) SecondaryContainer
-                                    else SurfaceDim
-                                ),
+                                .background(SecondaryContainer),
                             contentAlignment = Alignment.Center
                         ) {
                             Text(
                                 "${index + 1}",
                                 style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
-                                color = if (isCompleted || isInProgress) OnSecondaryContainer else OnSurfaceVariant
+                                color = OnSecondaryContainer
                             )
                         }
 
                         // Bottom line segment
-                        if (index < artist.timelineSteps.size - 1) {
+                        if (index < visibleSteps.size - 1) {
                             Box(
                                 modifier = Modifier
                                     .width(2.dp)
@@ -173,8 +168,6 @@ fun WorkInProgressTimelineScreen(
                     // Right: timeline card
                     TimelineStepCard(
                         step = step,
-                        isCompleted = isCompleted,
-                        isInProgress = isInProgress,
                         modifier = Modifier.weight(1f).padding(bottom = 16.dp)
                     )
                 }
