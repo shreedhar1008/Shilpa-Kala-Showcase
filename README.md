@@ -71,9 +71,3 @@ Shilpa-Kala Showcase aims to provide a modern digital solution that empowers art
 - Preserve cultural heritage
 - Build a smart digital showcase platform
 
----
-
-# 📷 Screenshots
-
-```bash
-Add application screenshots here
