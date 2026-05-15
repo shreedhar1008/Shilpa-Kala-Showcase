@@ -36,7 +36,6 @@ The application helps local artists connect with wider audiences through technol
 # 📱 Modules
 
 ## 👤 User Module
-- User Registration & Login
 - Browse Artworks
 - Search Products
 - View Artisan Profiles
