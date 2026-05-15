@@ -27,8 +27,6 @@ The application helps local artists connect with wider audiences through technol
 |------------|---------|
 | Kotlin | Android Development |
 | Android Studio | IDE |
-| Firebase Authentication | User Login |
-| Firebase Realtime Database | Data Storage |
 | XML | UI Design |
 | Material Design | Modern UI Components |
 | Generative AI Concepts | Smart Recommendations |
