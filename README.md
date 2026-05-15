@@ -25,7 +25,7 @@ The application helps local artists connect with wider audiences through technol
 
 | Technology | Purpose |
 |------------|---------|
-| Java / Kotlin | Android Development |
+| Kotlin | Android Development |
 | Android Studio | IDE |
 | Firebase Authentication | User Login |
 | Firebase Realtime Database | Data Storage |
