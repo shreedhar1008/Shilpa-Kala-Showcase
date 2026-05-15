@@ -14,7 +14,7 @@ The application is designed for:
 
 ---
 
-# 💡 Problem Statement
+## 💡 Problem Statement
 
 Traditional artisans often face major challenges such as:
 - Lack of digital exposure
@@ -28,7 +28,7 @@ Shilpa-Kala Showcase solves this problem by creating a modern Android platform t
 
 ---
 
-# 🚀 Features
+## 🚀 Features
 
 - 🖼️ Digital showcase for handicrafts and artworks
 - 🤖 AI-powered product recommendations
@@ -42,28 +42,28 @@ Shilpa-Kala Showcase solves this problem by creating a modern Android platform t
 
 ---
 
-# 📱 Modules
+## 📱 Modules
 
-## 👤 User Module
+### 👤 User Module
 - Browse Artworks
 - Search Products
 - View Artisan Profiles
 - Explore Traditional Crafts
 
-## 🎨 Artisan Module
+### 🎨 Artisan Module
 - Upload Products
 - Manage Product Information
 - Showcase Handmade Art
 - Promote Traditional Culture
 
-## 🤖 AI Module
+### 🤖 AI Module
 - Personalized Recommendations
 - Smart Product Suggestions
 - Improved User Experience
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -75,9 +75,67 @@ Shilpa-Kala Showcase solves this problem by creating a modern Android platform t
 
 ---
 
-# ⚙️ Installation & Setup
+## ⚙️ Getting Started
 
-## 1️⃣ Clone the Repository
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
+
+### 📋 Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- **Android Studio Jellyfish (2023.3.1)** or newer
+- **JDK 17** (required for the Gradle Build Tool)
+- **Android SDK Platform 34** (UpsideDownCake)
+
+### 🔧 Installation & Setup
+
+**1. Clone the repository:**
 
 ```bash
 git clone https://github.com/shreedhar1008/Shilpa-Kala-Showcase.git
+cd Shilpa-Kala-Showcase
+```
+
+**2. Open the project:**
+- Launch Android Studio
+- Select **Open** and navigate to the project folder
+- Wait for the IDE to finish the **Gradle Sync**
+
+**3. Dependency installation:**
+
+The project uses Gradle to manage dependencies, which download automatically during sync. Key dependencies include:
+
+- **Material Design** for modern UI components
+- **Coil** for image loading
+- **Navigation Component** for screen routing
+- **Generative AI SDK** for recommendation features
+
+### ▶️ Running the App
+
+**1. Device setup:**
+- **Physical Device:** Connect your phone via USB and enable **USB Debugging** in Developer Options
+- **Emulator:** Open **Device Manager** in Android Studio and create a Virtual Device *(Recommended: Pixel 6, API 33+)*
+
+**2. Build and launch:**
+- Select `app` in the run configurations dropdown at the top
+- Click the **Run** button (▶️) or press `Shift + F10`
+
+### 🏗️ Build & Development Scripts
+
+Use the terminal at the root of the project to perform common tasks:
+
+| Command | Action |
+|--------|--------|
+| `./gradlew clean` | Cleans the build folders |
+| `./gradlew assembleDebug` | Generates a debug APK in `app/build/outputs/apk/` |
+| `./gradlew test` | Runs local unit tests |
+| `./gradlew lint` | Runs a code quality check |
+
+### ✅ Build Success Checklist
+
+If you are updating the code, ensure the following pass before submitting:
+
+- [ ] **Compile Check:** Run `./gradlew build` to ensure there are no syntax errors
+- [ ] **Navigation Check:** Ensure `MainActivity.kt` correctly initializes the navigation graph
+- [ ] **Theme Check:** Verify that the app theme is correctly applied in `themes.xml`
+- [ ] **Dependency File:** Ensure any new libraries are added to `app/build.gradle.kts`
