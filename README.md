@@ -1,10 +1,30 @@
 # 🎨 Shilpa-Kala Showcase
 
-## 📌 Overview
+## 📌 Project Overview
 
-Shilpa-Kala Showcase is an AI-powered Android application designed to promote and preserve rural arts, handicrafts, and cultural heritage by providing a digital platform for artisans to showcase and promote their creations.
+Shilpa-Kala Showcase is an AI-powered Android application developed to promote and preserve rural arts, handicrafts, and traditional cultural heritage through digital technology.
 
-The application helps local artists connect with wider audiences through technology and supports digital empowerment for rural communities.
+Many rural artisans struggle to market their handmade products because they lack online visibility and digital platforms. This project provides a smart mobile application where artisans can showcase their artwork, connect with users, and digitally promote traditional culture.
+
+The application is designed for:
+- Rural artisans and craftsmen
+- Art lovers and buyers
+- Students and cultural enthusiasts
+- Communities interested in preserving traditional arts
+
+---
+
+# 💡 Problem Statement
+
+Traditional artisans often face major challenges such as:
+- Lack of digital exposure
+- Limited marketing opportunities
+- Difficulty reaching modern customers
+- Decline of traditional art forms
+
+Due to these issues, many valuable cultural and artistic traditions are slowly disappearing.
+
+Shilpa-Kala Showcase solves this problem by creating a modern Android platform that digitally empowers artisans and helps preserve rural culture using technology and AI-based recommendations.
 
 ---
 
@@ -13,23 +33,12 @@ The application helps local artists connect with wider audiences through technol
 - 🖼️ Digital showcase for handicrafts and artworks
 - 🤖 AI-powered product recommendations
 - 🔍 Smart search and category filtering
-- 📱 User-friendly Android interface
-- 🛒 Product browsing and artisan details
-- 🌐 Promotion of rural culture and traditional arts
-- 🔐 Secure user authentication
-- 📊 Product management system
-
----
-
-# 🛠️ Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| Kotlin | Android Development |
-| Android Studio | IDE |
-| XML | UI Design |
-| Material Design | Modern UI Components |
-| Generative AI Concepts | Smart Recommendations |
+- 📱 Simple and user-friendly Android interface
+- 🎨 Artisan profile management
+- 🛒 Product browsing system
+- 🌐 Promotion of rural culture and heritage
+- 📊 Product management features
+- 💡 Smart user engagement features
 
 ---
 
@@ -39,32 +48,36 @@ The application helps local artists connect with wider audiences through technol
 - Browse Artworks
 - Search Products
 - View Artisan Profiles
+- Explore Traditional Crafts
 
 ## 🎨 Artisan Module
 - Upload Products
 - Manage Product Information
-- Showcase Traditional Art
+- Showcase Handmade Art
+- Promote Traditional Culture
 
 ## 🤖 AI Module
 - Personalized Recommendations
-- Smart Suggestions
-- User Engagement Features
+- Smart Product Suggestions
+- Improved User Experience
 
 ---
 
-# 💡 Problem Statement
+# 🛠️ Tech Stack
 
-Traditional rural artisans often struggle to market their handmade products due to lack of digital platforms and online visibility. As a result, many traditional art forms are slowly disappearing.
-
-Shilpa-Kala Showcase aims to provide a modern digital solution that empowers artisans and preserves cultural heritage using technology.
+| Technology | Purpose |
+|------------|---------|
+| Kotlin | Android Development |
+| Android Studio | IDE |
+| XML | User Interface Design |
+| Material Design | Modern UI Components |
+| Generative AI Concepts | Recommendation Features |
 
 ---
 
-# 🎯 Objectives
+# ⚙️ Installation & Setup
 
-- Promote traditional arts and handicrafts
-- Support rural artisans digitally
-- Increase visibility of handmade products
-- Preserve cultural heritage
-- Build a smart digital showcase platform
+## 1️⃣ Clone the Repository
 
+```bash
+git clone https://github.com/shreedhar1008/Shilpa-Kala-Showcase.git
